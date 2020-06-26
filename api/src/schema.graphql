@@ -1,0 +1,85 @@
+type Controller {
+    id: Int
+    name: String
+    fullName: String
+    description: String
+    representatives: [String]
+    address: String
+    email: String
+    phone: String
+    website: String
+    privacyPolicy: String
+    dataProtectionOfficer: DataProtectionOfficer @relation(name: "EMPLOYS", direction: "OUT") 
+    adServers: [AdServer] @relation(name: "HAS_ADVERTISER", direction: "OUT")
+    purposes: [Purpose] @relation(name: "HAS_CONSENTABLE_PURPOSE", direction: "OUT")
+    purposesNonConsentable: [Purpose] @relation(name: "HAS_NON_CONSENTABLE_PURPOSE", direction: "OUT")
+    purposesFlexible: [Purpose] @relation(name: "HAS_FLEXIBLE_PURPOSE", direction: "OUT")
+    purposesSpecial: [Purpose] @relation(name: "HAS_SPECIAL_PURPOSE", direction: "OUT")
+    features: [Feature] @relation(name: "HAS_FEATURE", direction: "OUT")
+    featuresSpecial: [Feature] @relation(name: "HAS_SPECIAL_FEATURE", direction: "OUT")
+    lastUpdate: String
+    deletedDate: String
+}
+
+type DataProtectionOfficer {
+    name: String
+    address: String
+    email: String
+    phone: String
+    lastUpdate: String
+}
+
+type AdServer {
+    url: String
+}
+
+type Purpose {
+    id: Int
+    name: String
+    description: String
+    descriptionLegal: String
+}
+
+type SpecialPurpose {
+    id: Int
+    name: String
+    description: String
+    descriptionLegal: String
+}
+
+type Feature {
+    id: Int
+    name: String
+    description: String
+    descriptionLegal: String
+}
+
+type SpecialFeature {
+    id: Int
+    name: String
+    description: String
+    descriptionLegal: String
+}
+
+type Stack {
+    id: Int
+    purposes: [Purpose] @relation(name: "HAS_PURPOSE", direction: "OUT")
+    specialFeatures: [SpecialFeature] @relation(name: "HAS_SPECIAL_FEATURE", direction: "OUT")
+    name: String
+    description: String
+}
+
+
+
+
+type PersonalData {
+    type: String
+    description: String
+}
+
+
+type Transfer @relation(name: "TRANSFER") {
+    from: Controller
+    to: Controller
+    dataDisclosed: [PersonalData]
+}
