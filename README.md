@@ -18,7 +18,7 @@ $ docker-compose up
 Elias Grünewald
 
 ## License
-GPLv3
+Apache License v2
 
 ---
 ---
@@ -27,8 +27,6 @@ GPLv3
 # GRANDstack Starter
 
 This project is a starter for building a [GRANDstack](https://grandstack.io) (GraphQL, React, Apollo, Neo4j Database) application. There are two components to the starter, the UI application (in React and Angular flavors) and the API app (GraphQL server).
-
-[![Hands On With The GRANDstack Starter](http://img.youtube.com/vi/rPC71lUhK_I/0.jpg)](http://www.youtube.com/watch?v=rPC71lUhK_I "Hands On With The GRANDstack Starter")
 
 ## Quickstart
 
