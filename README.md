@@ -4,11 +4,13 @@ This repository is based on the GRANDstack Starter Platform for building a appli
 This tool aims to facilitate the analysis of the IAB Europe framework as part of the expressiveness analysis for a Transparency Information Language.
 
 ## Running the application
-Find the schema under `api/src/schema.graphql`.
+Find the schema under `transparency-analysis-platform
+/api/src/schema.graphql`.
 
 ```bash
-$ docker-compose build .
+$ cd transparency-analysis-platform/
 $ docker-compose up
+$ python extractors/import_iab_data\ v2.py
 ```
 
 - http://localhost:4001/graphql
