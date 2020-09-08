@@ -1,3 +1,5 @@
+![Docker Compose Actions Workflow](https://github.com/Transparency-Information-Language/transparency-analysis-platform/workflows/Docker%20Compose%20Actions%20Workflow/badge.svg)
+
 # Transparency Analysis Platform
 This repository is based on the GRANDstack Starter Platform for building a application using Neo4j, Apollo, and GraphQL in an out-of-the-box fashion.
 
