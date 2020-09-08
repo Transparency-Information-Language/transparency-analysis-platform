@@ -4,8 +4,7 @@ This repository is based on the GRANDstack Starter Platform for building a appli
 This tool aims to facilitate the analysis of the IAB Europe framework as part of the expressiveness analysis for a Transparency Information Language.
 
 ## Running the application
-Find the schema under `transparency-analysis-platform
-/api/src/schema.graphql`.
+Find the schema under `transparency-analysis-platform/api/src/schema.graphql`.
 
 ```bash
 $ cd transparency-analysis-platform/
