@@ -1,9 +1,8 @@
 ![Docker Compose Actions Workflow](https://github.com/Transparency-Information-Language/transparency-analysis-platform/workflows/Docker%20Compose%20Actions%20Workflow/badge.svg)
 
 # Transparency Analysis Platform
-This repository is based on the GRANDstack Starter Platform for building a application using Neo4j, Apollo, and GraphQL in an out-of-the-box fashion.
-
-This tool aims to facilitate the analysis of the IAB Europe framework as part of the expressiveness analysis for a Transparency Information Language.
+This repository is based on the GRANDstack Starter Platform for building an application using Neo4j, Apollo, and GraphQL in an out-of-the-box fashion.
+The tool itself aims to facilitate the analysis of the IAB Europe framework as part of the expressiveness analysis for a Transparency Information Language.
 
 ## Running the application
 Find the schema under `transparency-analysis-platform/api/src/schema.graphql`.
